@@ -3,6 +3,10 @@ Economia.js
 
 Economia.js is a Javascript port of [bazaarBot] (https://github.com/larsiusprime/bazaarBot), making it a perfect fit for HTML5 based games that want to include some sort of market simulation.
 
+### Update:
+This fork is a fixup of this (now quite old) package. I've mostly removed the weird old js stuff and obviously insecure stuff (like the `evals`). The goal is to make this simpler so it can be referenced by other tools I'm making. Many thanks to Jimimimi for the work done here.
+
+
 ### Description:
 
 > A simple agent-based free market simulator engine. 
@@ -84,12 +88,10 @@ var dummyData = {
 * Instantiate an economy: `var market = new Economy(dummyData)`
 * Call the `tick` method of your economy object to simulate a round: `market.tick()`
 
-Building from source:
 ---------------------------
 ### Node to the rescue!
 
 * Clone the repository
-* Run `npm install` from the main folder
-* Edit `Gruntfile.js` to reflect any changes you have made to the source
-* Run `grunt` in the main folder
-* All done! Your compiled `economia.js` and minified `economia.min.js` should be in the `build` folder
+* Import Economica.js into something
+* ???
+* Finish this readme
